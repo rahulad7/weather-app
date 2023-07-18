@@ -72,13 +72,15 @@ function renderCities(cityData) {
         const city = cityData[i];
 
         // Creating a element for all the cities each "p"
-        const listItem = document.createElement('p');
+        const listItem = document.createElement('div');
         listItem.textContent = city;
 
         // Add click event listener to populate search input
         listItem.addEventListener('click', function () {
             searchInput.value = city;
             result.style.display = "none"
+            const values = searchInput.value;
+            fetchResults(values)
         })
 
         // Append list item to the city list
@@ -93,17 +95,25 @@ function filterCities() {
     renderCities(filteredCities);
 }
 // Event Listener for form submission
-searchform.addEventListener('submit', function (e) {
+// searchform.addEventListener('submit', function (e) {
+//     e.preventDefault()
+//     const searchvalue = searchInput.value;
+//     fetchResults(searchvalue)
+// })
+
+searchbtn.addEventListener('click', function(e){
     e.preventDefault()
     const searchvalue = searchInput.value;
     fetchResults(searchvalue)
 })
+
 
 searchInput.addEventListener("focusin", () => {
     result.style.display = "block"
 })
 
 searchInput.addEventListener('input', filterCities);
+
 fetchResults()
 fetchCities();
 
