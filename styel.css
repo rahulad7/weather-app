@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    z-index: 100;
+    background: url('http://unandroideperamico.files.wordpress.com/2012/11/android_4-2_jellybean_background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    padding: 10px 10px 10px 10px;
+}
+
+.info {
+    gap: 20px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+}
+
+
+.date-container .time {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.searchform {
+    width: 100%;
+    display: flex;
+    padding-top: 50px;
+}
+
+.search{
+    padding-left: 10px;
+    outline: none;
+    height: 30px;
+    width: 100%;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    margin: auto;
+    color: #9DBFAF;
+    border: 3px solid #00B4CC;
+}
+
+.search:focus{
+    color: #00B4CC;
+}
+
+.searchbtn {
+    width: 40px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.result {
+    margin: auto;
+    overflow: auto;
+    background: #fff;
+    color: #9DBFAF;
+    height: 200px;
+    color: black;
+    width: 97%;
+    cursor: pointer;
+    display: none;
+    padding-left: 10px;
+    position: absolute;
+    border: 1px solid #00B4CC;
+    border-radius: 5px;
+}
+
+.main {
+    padding-top: 25px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+::placeholder {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.location .city {
+    font-size: 30px;
+}
+
+.current {
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.temp {
+    font-size: 40px;
+    font-family: 'Merriweather', serif;
+}
+
+.hour-info {
+    text-align: center;
+}
+
+.current .weather {
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.city{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.current .hi-low {
+    font-size: 20px;
+}
+
+.future-forecast {
+    font-size: 20px;
+    color: white;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.future-forecast::-webkit-scrollbar {
+    display: none;
+}
+
+/* .weatther-forecast:nth-child(1){
+    width: 100%;
+} */
+
+/* .weather-forecast{
+    display: flex; 
+} */
+
+.weather-forecast-item {
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:1024px) {
+    .future-forecast {
+        justify-content: center;
+
+    }
+}
+
+@media screen and (max-width:425px) {
+    .date-container {
+        padding: 10px;
+        /* font-size: 20px; */
+    }
+}
+

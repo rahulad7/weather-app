@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./styel.css">
+    <script src="https://kit.fontawesome.com/9744b2b05f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,300&family=Montserrat:ital,wght@1,300;1,400&family=Poppins:ital,wght@1,700&family=Roboto:ital,wght@0,500;1,300&family=Tektur&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <form class="searchform">
+            <input type="text" class="search" id="searchInput" placeholder="Search by Location" autocomplete="off">
+            <button class="searchbtn" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+        <div class="result" tabindex="0">
+            <p id="cityList">
+            </p>
+        </div>
+        <div class="info">
+            <div class="date-container">
+                <div class="time">
+                    Thur, mar 24, 2023
+                </div>
+                <div class="city">Dandeli, India</div>
+            </div>
+            <div class="location">
+                <div class="temp">15°c</div>
+            </div>
+
+        </div>
+        <main class="main">
+            <div class="image">
+                <img src="./images/icon1.png" alt="icon">
+            </div>
+            <div class="current">
+                <div class="weather">Sunny</div>
+                <div class="hi-low">12:00 PM</div>
+            </div>
+        </main>
+
+        <!-- <div class="hour-info">
+            <div class="time-zone">00:00</div>
+            <div class="icon"><img src="./images/icon1.png" alt="icon"></div>
+            <div class="daily-temp">15°c</div>
+        </div> -->
+
+        <section>
+            <div class="future-forecast">
+                <div class="weather-forecast">
+                    <div class="weather-forecast-item">
+                        <div id="date">Mon</div>
+                        <div class="day-image0">
+                            <img src="./images/icon.png" alt="">
+                        </div>
+                        <div class="day-temp0">35.6&#176; C</div>
+                    </div>
+                </div>
+
+                <div class="weather-forecast">
+                    <div class="weather-forecast-item">
+                        <div id="date1">Tue</div>
+                        <div class="day-image1">
+                            <img src="./images/icon.png" alt="">
+                        </div>
+                        <div class="day-temp1">35.6&#176; C</div>
+                    </div>
+                </div>
+
+                <div class="weather-forecast">
+                    <div class="weather-forecast-item">
+                        <div id="date2">Wed</div>
+                        <div class="day-image2">
+                            <img src="./images/icon.png" alt="">
+                        </div>
+                        <div class="day-temp2">35.6&#176; C</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="./app.js">
+
+    </script>
+</body>
+
+</html>
