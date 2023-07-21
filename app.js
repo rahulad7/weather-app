@@ -1,7 +1,7 @@
 
 let target = 'bangalore'
 const fetchResults = async (cities) => {
-    const api_key = "1d35dcc8063b4122ad764306233001"
+    const api_key = "API KEY"
     let url = `https://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${cities}&days=7`
     const res = await fetch(url)
     const data = await res.json()
